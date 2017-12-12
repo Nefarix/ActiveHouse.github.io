@@ -1,5 +1,7 @@
+//AH Studios
+//ActiveHouseV2 Project
 package io.github.activehouse;
-//AHStudio
+
 /**
  * Created by patng2007 on 2017-12-08.
  */
@@ -83,3 +85,4 @@ public class TempService /*extends Service*/ {
 //        super.onPostExecute(result);
 //    }
 }
+

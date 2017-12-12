@@ -24,7 +24,7 @@
     <string name="responseLog">\"Réponse de url:\"</string>
     <string name="rooms">Pièces</string>
     <string name="saveLogin">Enregistrer mon login</string>
-    <string name="server_address_get_rooms"></string>
+    <string name="server_address_get_rooms">x</string>
     <string name="settings">Paramètres</string>
     <string name="statistics">Statistiques</string>
     <string name="title_activity_home">Accueil</string>
@@ -82,6 +82,11 @@
     <string name="ryan">Ryan Antolin</string>
     <string name="patrick">Patrick Ng</string>
     <string name="groupTitle">AHStudio</string>
+
+    <string name="convert">Convertir les mesures</string>
+    <string name="convert1">Activer cette option pour convertir en mesure impériale</string>
+    <string name="theme">Changer la couleur du thème</string>
+
     <string name="developerParagraph">
 Bonjour l\'utilisateur! Bienvenue à ActiveHouse. Une application créée par AHStudio. Tu pourrais être
         se demandant qui est AHStudio et qui sont-ils? Nous sommes des étudiants de troisième année en technologie informatique de Humber College

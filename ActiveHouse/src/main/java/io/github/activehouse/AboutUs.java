@@ -1,5 +1,6 @@
+//AH Studios
+//ActiveHouseV2 Project
 package io.github.activehouse;
-//AHStudio
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 

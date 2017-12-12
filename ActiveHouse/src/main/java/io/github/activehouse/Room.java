@@ -1,6 +1,5 @@
-//Active Applications
-//Active House Project
-
+//AH Studios
+//ActiveHouseV2 Project
 package io.github.activehouse;
 
 import android.os.AsyncTask;
@@ -64,7 +63,7 @@ public class Room {
             }
 
             // Making a request to url and getting response
-            String url = "http://munro.humber.ca/~n01046059/ActiveHouse/update_room.php?ROOM_ID=" + roomID + "&LIGHT_STATUS=" + status
+            String url = "192.168.0.21/ActiveHouse/update_room.php?ROOM_ID=" + roomID + "&LIGHT_STATUS=" + status
                     + "&LIGHT_SCHEDULE=" + schedule + "&LIGHT_TIME_ON=" + timeOn + "&LIGHT_TIME_OFF=" + timeOff + "&ROOM_NAME=" + name;
             url = url.replaceAll(" ", "%20");
             String jsonStr = sh.makeServiceCall(url);
