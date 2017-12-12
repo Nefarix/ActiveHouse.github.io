@@ -1,5 +1,5 @@
-//Active Applications
-//Active House Project
+//AH Studios
+//ActiveHouseV2 Project
 
 package io.github.activehouse;
 
@@ -82,7 +82,7 @@ public class RegisterActivity extends AppCompatActivity {
             HttpHandler sh = new HttpHandler();
 
             // Making a request to url and getting response
-            String url = "http://munro.humber.ca/~n01046059/ActiveHouse/register.php?username=" + Username + "&password=" + Password
+            String url = "192.168.0.21/ActiveHouse/register.php?username=" + Username + "&password=" + Password
                     + "&fname=" + FName + "&lname=" + LName + "&email=" + Email + "&houseid=" + HouseID;
             String jsonStr = sh.makeServiceCall(url);
 
