@@ -71,6 +71,16 @@
     <string name="invalid_houseid">Invalid House ID</string>
     <string name="regSuccess">Account created, please login now</string>
     <string name="ERRORLOGGINGIN">Error Logging in, please enter Username and Password</string>
+    <string name="lastHour">Last Hour</string>
+    <string name="last7Day">Last 7 Days</string>
+    <string name="lastMonth">Last Month</string>
+    <string name="lastYear">Last Year</string>
+    <string name="longerThanAYear">Longer Than A Year</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="aboutUs">About Us</string>
+    <string name="oliver">Oliver Duarte</string>
+    <string name="ryan">Ryan Antolin</string>
+    <string name="patrick">Patrick Ng</string>
 
 
 </resources>
