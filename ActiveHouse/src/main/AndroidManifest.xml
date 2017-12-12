@@ -45,7 +45,9 @@
             android:label="@string/register"
             android:parentActivityName=".MainActivity"
             android:theme="@style/appThemeDark" />
-        <activity android:name=".Settings"></activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"></activity>
     </application>
 
 </manifest>
