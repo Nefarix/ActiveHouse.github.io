@@ -18,7 +18,7 @@ public class SettingsActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction()
                 .replace(android.R.id.content, new SettingsFragment())
                 .commit();
-
+        //TODO: Figure out how I will implement the logic for the settings that will be featured.
 
         //setContentView(R.layout.activity_settings);
     }
