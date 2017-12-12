@@ -81,8 +81,9 @@
     <string name="oliver">Oliver Duarte</string>
     <string name="ryan">Ryan Antolin</string>
     <string name="patrick">Patrick Ng</string>
-    <string name="convert">Turn this on to convert to imperial measurement</string>
-
+    <string name="convert">Convert Measurements</string>
+    <string name="convert1">Turn this on to convert to imperial measurement</string>
+    <string name="theme">Change Theme Colour</string>
 
 
 </resources>
