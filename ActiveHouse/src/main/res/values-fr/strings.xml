@@ -71,4 +71,20 @@
     <string name="register">Registre</string>
     <string name="register_a_new_active_house">Enregistrer une nouvelle maison active</string>
     <string name="title_activity_room">RoomActivity</string>
+    <string name="lastHour">Dernière heure</string>
+    <string name="last7Day">Les 7 derniers jours</string>
+    <string name="lastMonth">Le mois dernier</string>
+    <string name="lastYear">L\'année dernière</string>
+    <string name="longerThanAYear">Plus d\'une année</string>
+    <string name="yesterday">Hier</string>
+    <string name="aboutUs">À propos de nous</string>
+    <string name="oliver">Oliver Duarte</string>
+    <string name="ryan">Ryan Antolin</string>
+    <string name="patrick">Patrick Ng</string>
+    <string name="groupTitle">AHStudio</string>
+    <string name="developerParagraph">
+Bonjour l\'utilisateur! Bienvenue à ActiveHouse. Une application créée par AHStudio. Tu pourrais être
+        se demandant qui est AHStudio et qui sont-ils? Nous sommes des étudiants de troisième année en technologie informatique de Humber College
+        qui a conçu une application pour aider à résoudre le problème qui est en mesure de contrôler et de surveiller votre maison de la
+        confort de votre smartphone.</string>
 </resources>
