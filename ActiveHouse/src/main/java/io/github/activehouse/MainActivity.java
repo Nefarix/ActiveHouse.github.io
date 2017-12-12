@@ -132,6 +132,7 @@ public class MainActivity extends AppCompatActivity implements
                             FirebaseUser user = mAuth.getCurrentUser();
                             updateUI(user);
                         } else {
+                            // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
                             Toast.makeText(MainActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
@@ -143,8 +144,35 @@ public class MainActivity extends AppCompatActivity implements
                             mStatusTextView.setText(R.string.auth_failed);
                         }
                         // [END_EXCLUDE]
+                    }
+                });
+        // [END sign_in_with_email]
+    }
 
+    private void signOut() {
+        mAuth.signOut();
+        updateUI(null);
+    }
 
+    private void sendEmailVerification() {
+        // Disable button
+        findViewById(R.id.verify_email_button).setEnabled(false);
+
+        // Send verification email
+        // [START send_email_verification]
+        final FirebaseUser user = mAuth.getCurrentUser();
+        user.sendEmailVerification()
+                .addOnCompleteListener(this, new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        // [START_EXCLUDE]
+                        // Re-enable button
+                        findViewById(R.id.verify_email_button).setEnabled(true);
+
+                        if (task.isSuccessful()) {
+                            Toast.makeText(MainActivity.this,
+                                    "Verification email sent to " + user.getEmail(),
+                                    Toast.LENGTH_SHORT).show();
                         } else {
                             Log.e(TAG, "sendEmailVerification", task.getException());
                             Toast.makeText(MainActivity.this,
