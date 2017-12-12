@@ -1,3 +1,21 @@
+
+package io.github.activehouse;
+//AH Studios
+//ActiveHouseV2 Project
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class AboutUs extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_about_us);
+
+
+    }
+}
+
 package io.github.activehouse;
 //AHStudio
 import android.support.v7.app.AppCompatActivity;
@@ -13,3 +31,4 @@ public class AboutUs extends AppCompatActivity {
 
     }
 }
+
