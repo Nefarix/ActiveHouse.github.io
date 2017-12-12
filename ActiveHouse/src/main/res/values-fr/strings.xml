@@ -81,4 +81,10 @@
     <string name="oliver">Oliver Duarte</string>
     <string name="ryan">Ryan Antolin</string>
     <string name="patrick">Patrick Ng</string>
+    <string name="groupTitle">AHStudio</string>
+    <string name="developerParagraph">
+Bonjour l\'utilisateur! Bienvenue à ActiveHouse. Une application créée par AHStudio. Tu pourrais être
+        se demandant qui est AHStudio et qui sont-ils? Nous sommes des étudiants de troisième année en technologie informatique de Humber College
+        qui a conçu une application pour aider à résoudre le problème qui est en mesure de contrôler et de surveiller votre maison de la
+        confort de votre smartphone.</string>
 </resources>
