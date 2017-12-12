@@ -81,6 +81,14 @@
     <string name="oliver">Oliver Duarte</string>
     <string name="ryan">Ryan Antolin</string>
     <string name="patrick">Patrick Ng</string>
+    <string name="groupTitle">AHStudio</string>
+    <string name="developerParagraph">Hello User! Welcome to ActiveHouse. An application that was created by AHStudio. You might be
+        wondering who is AHStudio and who are they? We are 3rd year Computer Engineering Technology Students from Humber College
+        that has designed an application to help solve the issue that is being able to control and monitor your house from the
+        comfort of your smartphone.</string>
+    <!--<string name="appParagraph">ActiveHouse is an application that connect to a database where the sensors around your house sent-->
+        <!--information to it and will sync back to the application. Sensors that are used with this application are Temperature,-->
+        <!--Water, Power and Light. </string>-->
 
 
 </resources>
