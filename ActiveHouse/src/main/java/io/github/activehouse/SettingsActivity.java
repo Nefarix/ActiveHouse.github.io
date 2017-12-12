@@ -1,3 +1,6 @@
+//AH Studios
+//ActiveHouseV2 Project
+
 package io.github.activehouse;
 
 import android.support.v7.app.AppCompatActivity;
