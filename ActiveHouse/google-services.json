@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "368454985932",
+    "firebase_url": "https://activehousegithubio.firebaseio.com",
+    "project_id": "activehousegithubio",
+    "storage_bucket": "activehousegithubio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368454985932:android:d0e200fd8fa5cb7b",
+        "android_client_info": {
+          "package_name": "io.github.activehouse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "368454985932-nljjn7e3i7npqo01391pduharvr08na8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.github.activehouse",
+            "certificate_hash": "00fb8e80c4e14ebb4ecc1c90a1f2cac16812a403"
+          }
+        },
+        {
+          "client_id": "368454985932-sesken3abd6ueot8jqup819smmmca8me.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBngLxR1RAvJlDLpY65DkvkCBGbwWvhuNA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "368454985932-sesken3abd6ueot8jqup819smmmca8me.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
