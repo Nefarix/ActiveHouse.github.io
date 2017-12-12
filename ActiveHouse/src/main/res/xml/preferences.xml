@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!--
+    <android.support.v7.preference.SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:key="switch_preference_1"
+        android:summary="@string/convert"
+        android:title="Convert measurement" />
+    -->
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="switch_preference_1"
+        android:summary="@string/convert1"
+        android:title="@string/convert" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="switch_preference_1"
+        android:summary="Filler"
+        android:title="Filler" />
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@android:array/emailAddressTypes"
+        android:entryValues="@android:array/imProtocols"
+        android:key="list_preference_1"
+        android:title="@string/theme" />
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@android:array/emailAddressTypes"
+        android:entryValues="@android:array/imProtocols"
+        android:key="list_preference_1"
+        android:title="Filler" />
 
 </PreferenceScreen>

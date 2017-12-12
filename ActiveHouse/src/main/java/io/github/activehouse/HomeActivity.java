@@ -182,6 +182,11 @@ public class HomeActivity extends AppCompatActivity
             startActivity(intent);
             finish();
             return true;
+        } else if (id == R.id.action_settings){
+            Intent intent = new Intent(HomeActivity.this, SettingsActivity.class);
+            startActivity(intent);
+            finish();
+            return true;
         }
 
         return super.onOptionsItemSelected(item);
