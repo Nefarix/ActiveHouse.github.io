@@ -40,10 +40,12 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".RegisterActivity"
+        <activity
+            android:name=".RegisterActivity"
             android:label="@string/register"
             android:parentActivityName=".MainActivity"
             android:theme="@style/appThemeDark" />
+        <activity android:name=".Settings"></activity>
     </application>
 
 </manifest>
