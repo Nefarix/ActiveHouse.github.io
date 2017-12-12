@@ -1,6 +1,5 @@
-//Active Applications
-//Active House Project
-
+//AH Studios
+//ActiveHouseV2 Project
 package io.github.activehouse;
 
 import android.content.Context;
@@ -150,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
 
             String hashedPW = md5(password);
             // Making a request to url and getting response
-            String url = "http://munro.humber.ca/~n01046059/ActiveHouse/login.php?username=" + username + "&password=" + hashedPW;
+            String url = "192.168.0.21/ActiveHouse/login.php?username=" + username + "&password=" + hashedPW;
             String jsonStr = sh.makeServiceCall(url);
 
             Log.e(TAG, "Response from url: " + jsonStr);

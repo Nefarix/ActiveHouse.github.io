@@ -1,6 +1,5 @@
-//Active Applications
-//Active House Project
-
+//AH Studios
+//ActiveHouseV2 Project
 package io.github.activehouse;
 
 import android.app.Service;
@@ -80,7 +79,7 @@ public class GasService extends Service {
             HttpHandler sh = new HttpHandler();
 
             // Making a request to url and getting response
-            String url = "http://munro.humber.ca/~n01046059/ActiveHouse/get_gas.php?houseid=" + HouseID;
+            String url = "192.168.0.21/ActiveHouse/get_gas.php?houseid=" + HouseID;
             String jsonStr = sh.makeServiceCall(url);
 
             Log.e(this.getClass().getSimpleName(), "Response from url: " + jsonStr);

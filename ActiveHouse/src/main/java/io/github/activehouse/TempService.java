@@ -1,5 +1,6 @@
 package io.github.activehouse;
-//AHStudio
+//AH Studios
+//ActiveHouseV2 Project
 /**
  * Created by patng2007 on 2017-12-08.
  */

@@ -1,6 +1,5 @@
-//Active Applications
-//Active House Project
-
+//AH Studios
+//ActiveHouseV2 Project
 package io.github.activehouse;
 
 import android.content.DialogInterface;
@@ -232,7 +231,7 @@ public class HomeActivity extends AppCompatActivity
         protected Void doInBackground(Void... arg0) {
             HttpHandler sh = new HttpHandler();
             // Making a request to url and getting response
-            String url = "http://munro.humber.ca/~n01046059/ActiveHouse/get_rooms.php?houseid=" + myhouse.getHouseID();
+            String url = "192.168.0.21/ActiveHouse/get_rooms.php?houseid=" + myhouse.getHouseID();
             String jsonStr = sh.makeServiceCall(url);
 
             Log.e(TAG, getString(R.string.responseLog) + jsonStr);
