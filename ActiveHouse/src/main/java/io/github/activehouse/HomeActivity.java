@@ -188,6 +188,13 @@ public class HomeActivity extends AppCompatActivity
             return true;
         }
 
+        else if (id == R.id.action_aboutus) {
+            Intent intent = new Intent(HomeActivity.this, AboutUs.class);
+            startActivity(intent);
+            finish();
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -209,7 +216,12 @@ public class HomeActivity extends AppCompatActivity
 
         //} else if (id == R.id.nav_settings) {
 
-        } else {
+        }
+        else if (id == R.id.nav_aboutUs) {
+            Intent intent = new Intent(HomeActivity.this, AboutUs.class);
+            startActivity(intent);
+        }
+        else {
             startActivity(item.getIntent());
         }
 

@@ -45,6 +45,11 @@
             android:label="@string/register"
             android:parentActivityName=".MainActivity"
             android:theme="@style/appThemeDark" />
+        <activity
+            android:name=".AboutUs"
+            android:label="@string/aboutUs"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".SettingsActivity"></activity>
     </application>
 
