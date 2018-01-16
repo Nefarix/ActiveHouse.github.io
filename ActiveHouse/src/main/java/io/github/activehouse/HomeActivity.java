@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Process;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -48,6 +49,7 @@ public class HomeActivity extends AppCompatActivity
 
         getIntent().setAction("Already created");
 
+        PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 
         LinearLayout LightsOn = (LinearLayout) findViewById(R.id.linearLayoutOn);
         LightsOn.setOnClickListener(new View.OnClickListener() {
@@ -184,7 +186,7 @@ public class HomeActivity extends AppCompatActivity
         } else if (id == R.id.action_settings){
             Intent intent = new Intent(HomeActivity.this, SettingsActivity.class);
             startActivity(intent);
-            finish();
+            //finish();
             return true;
         }
 
@@ -214,6 +216,7 @@ public class HomeActivity extends AppCompatActivity
 
         //} else if (id == R.id.nav_stats) {
 
+<<<<<<< HEAD
         //} else if (id == R.id.nav_settings) {
 
         }
@@ -222,6 +225,9 @@ public class HomeActivity extends AppCompatActivity
             startActivity(intent);
         }
         else {
+=======
+        } else {
+>>>>>>> 7184308bbae8adbb340e61de5840678a1a39d4ac
             startActivity(item.getIntent());
         }
 

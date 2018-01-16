@@ -45,12 +45,24 @@
             android:label="@string/register"
             android:parentActivityName=".MainActivity"
             android:theme="@style/appThemeDark" />
+<<<<<<< HEAD
         <activity
             android:name=".AboutUs"
             android:label="@string/aboutUs"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".SettingsActivity"></activity>
+=======
+        <activity android:name=".SettingsActivity"
+            android:label="Settings"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity"
+                />
+
+        </activity>
+>>>>>>> 7184308bbae8adbb340e61de5840678a1a39d4ac
     </application>
 
 </manifest>
