@@ -48,7 +48,7 @@
             android:theme="@style/appThemeDark" />
         <activity
             android:name=".AboutUs"
-            android:label="@string/aboutUs"
+            android:label="@string/AboutUs"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
 

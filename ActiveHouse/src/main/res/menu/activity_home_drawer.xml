@@ -14,7 +14,7 @@
             app:showAsAction="never" />
         <item
             android:id="@+id/nav_aboutUs"
-            android:title="@string/aboutUs"/>
+            android:title="@string/AboutUs"/>
         <item
             android:id="@+id/nav_viewRooms"
             android:icon="@drawable/ic_pageview_black_48dp"

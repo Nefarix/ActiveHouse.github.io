@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="Colour">
+  <string-array name="Colour">
         <item>Default</item>
         <item>Red White</item>
         <item>Black Gray</item>

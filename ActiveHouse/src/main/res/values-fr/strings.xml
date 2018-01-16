@@ -81,8 +81,8 @@
     <string name="convert">Convertir les mesures</string>
     <string name="convert1">Activer cette option pour convertir en mesure impériale</string>
     <string name="theme">Changer la couleur du thème</string>
-
-    <string name="aboutUs">À propos de nous</string>
+    <string name="Colour">Coleur</string>
+    <string name="AboutUs">À propos de nous</string>
     <string name="oliver">Oliver Duarte</string>
     <string name="ryan">Ryan Antolin</string>
     <string name="patrick">Patrick Ng</string>
