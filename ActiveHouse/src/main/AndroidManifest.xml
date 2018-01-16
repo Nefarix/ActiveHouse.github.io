@@ -20,6 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".HomeActivity"
             android:label="@string/title_activity_home"
@@ -46,6 +47,7 @@
             android:label="@string/register"
             android:parentActivityName=".MainActivity"
             android:theme="@style/appThemeDark" />
+
         <activity
             android:name=".AboutUs"
             android:label="@string/aboutUs"
