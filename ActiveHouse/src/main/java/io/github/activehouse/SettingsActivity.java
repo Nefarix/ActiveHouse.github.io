@@ -20,10 +20,11 @@ import java.util.Locale;
 *
  */
 public class SettingsActivity extends AppCompatActivity {
-    /* private boolean isLight;
+    //private boolean isLight;
     private boolean isChecked;
     private int currentTheme;
-    private int oldTheme; */
+    private int oldTheme;
+    private int conversion;
     public static final String KEY_PREF_EXAMPLE_SWITCH = "example_switch";
 
     @Override
@@ -33,8 +34,14 @@ public class SettingsActivity extends AppCompatActivity {
                 .replace(android.R.id.content, new SettingsFragment())
                 .commit();
         //TODO: Figure out how I will implement the logic for the settings that will be featured.
-        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-        /* isChecked = sharedPref.getBoolean("caps_pref", false);
+        /* SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+        isChecked = sharedPref.getBoolean("", true);
+        String convert = sharedPref.getString("switch_preference", "0");
+        conversion = Integer.parseInt(convert); */
+        //convertImperial();
+
+        /* Theme that always crashes on oldTheme
+        isChecked = sharedPref.getBoolean("", false);
         String lister = sharedPref.getString("list_preference", "0");
         oldTheme = Integer.parseInt(lister);
         toggleTheme(); */
@@ -42,8 +49,15 @@ public class SettingsActivity extends AppCompatActivity {
 
     }
 
+    private void convertImperial(){
+
+
+    }
+
     private void toggleTheme() {
-        /* SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+
+        /* Theme that always crashes on oldTheme
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
         isChecked = sharedPref.getBoolean("caps_pref", false);
         String lister = sharedPref.getString("list_preference", "1");
         String myName = sharedPref.getString("edittext_preference", "0");
