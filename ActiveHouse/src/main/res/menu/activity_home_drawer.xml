@@ -19,11 +19,11 @@
         <item
              android:id="@+id/nav_stats"
              android:icon="@drawable/ic_history_black_48dp"
-             android:title="@string/statistics" />
+             android:title="@string/statistics" /> -->
          <item
              android:id="@+id/nav_settings"
              android:icon="@drawable/ic_settings_black_48dp"
-             android:title="@string/settings" /> -->
+             android:title="@string/settings" />
     </group>
 
     <item android:title="@string/rooms"
@@ -31,7 +31,6 @@
         <menu>
             <item
                 android:id="@+id/nav_1"
-
                 android:title="" />
 
         </menu>

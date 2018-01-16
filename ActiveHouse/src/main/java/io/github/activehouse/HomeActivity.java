@@ -49,7 +49,7 @@ public class HomeActivity extends AppCompatActivity
 
         getIntent().setAction("Already created");
 
-        PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
+        PreferenceManager.setDefaultValues(HomeActivity.this, R.xml.preferences, false);
 
         LinearLayout LightsOn = (LinearLayout) findViewById(R.id.linearLayoutOn);
         LightsOn.setOnClickListener(new View.OnClickListener() {
@@ -107,12 +107,6 @@ public class HomeActivity extends AppCompatActivity
         Intent intent = new Intent(this, GasService.class);
         intent.putExtra("HouseID", MainActivity.HouseID);
         startService(intent);
-
-
-
-
-
-
     }
 
     @Override
@@ -183,13 +177,7 @@ public class HomeActivity extends AppCompatActivity
             startActivity(intent);
             finish();
             return true;
-        } else if (id == R.id.action_settings){
-            Intent intent = new Intent(HomeActivity.this, SettingsActivity.class);
-            startActivity(intent);
-            //finish();
-            return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -206,10 +194,14 @@ public class HomeActivity extends AppCompatActivity
             //intent.putExtra("SomeStringData", "");
 
             startActivity(intent);
+            //} else if (id == R.id.nav_stats) {
 
-        //} else if (id == R.id.nav_stats) {
-
-        } else {
+        } else if (id == R.id.nav_settings){
+                Intent intent = new Intent(HomeActivity.this, SettingsActivity.class);
+                startActivity(intent);
+                return true;
+        }
+        else{
             startActivity(item.getIntent());
         }
 
