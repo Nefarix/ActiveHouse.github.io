@@ -1,13 +1,14 @@
 package io.github.activehouse;
 
-import android.support.test.rule.ActivityTestRule;
 
+import android.support.test.rule.ActivityTestRule;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
+
 
 /**
  * Created by Ryan on 1/16/2018.
@@ -24,10 +25,14 @@ public class MainActivityTest {
     }
     @Test
     public void testLogin() throws Exception{
-        
+        String str = "Hello";
+        assertTrue(str.isEmpty());
     }
+
+
     @After
     public void tearDown() throws Exception {
+        mActivity = null;
     }
 
 
