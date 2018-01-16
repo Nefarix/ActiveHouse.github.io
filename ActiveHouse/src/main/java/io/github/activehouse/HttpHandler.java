@@ -5,7 +5,6 @@ package io.github.activehouse;
 
 
 /**
- * Created by Trenton on 2016-11-15.
  * Revised by Oliver on 2017-11-12
  */
 
