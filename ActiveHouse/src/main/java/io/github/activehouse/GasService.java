@@ -20,12 +20,15 @@ import java.util.TimerTask;
 
 
 public class GasService extends Service {
+
     public GasService() {
     }
+
 
     private static Timer timer = new Timer();
     private Context ctx;
     int HouseID;
+
 
     public IBinder onBind(Intent arg0)
     {
@@ -79,7 +82,7 @@ public class GasService extends Service {
             HttpHandler sh = new HttpHandler();
 
             // Making a request to url and getting response
-            String url = "192.168.0.21/ActiveHouse/get_gas.php?houseid=" + HouseID;
+            String url = "https://activehousegithubio.firebaseio.com/" + HouseID;
             String jsonStr = sh.makeServiceCall(url);
 
             Log.e(this.getClass().getSimpleName(), "Response from url: " + jsonStr);
