@@ -19,7 +19,8 @@
         android:defaultValue="1"
         android:entries="@array/Colour"
         android:entryValues="@array/Colour"
-        android:key="list_preference_1"
+        android:key="list_preference"
+        android:summary="@string/themeSummary"
         android:title="@string/theme" />
 
 

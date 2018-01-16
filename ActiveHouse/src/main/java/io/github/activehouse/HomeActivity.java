@@ -4,6 +4,7 @@ package io.github.activehouse;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Process;
 import android.preference.PreferenceManager;
@@ -36,7 +37,6 @@ public class HomeActivity extends AppCompatActivity
     private String TAG = MainActivity.class.getSimpleName();
     NavigationView navigationView;
 
-
     public static House myhouse;
 
 
@@ -44,6 +44,7 @@ public class HomeActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        //setTheme(android.R.style.Theme_NoTitleBar);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -340,7 +341,9 @@ public class HomeActivity extends AppCompatActivity
             TextView WaterToday = (TextView) findViewById(R.id.textViewWaterToday);
             TextView WaterAverage = (TextView) findViewById(R.id.textViewWaterAverage);
             TextView Lights = (TextView) findViewById(R.id.textViewLights);
-
+            /*
+            Make a if/else with true/false for converting.
+             */
             Temp.setText(String.valueOf(myhouse.getAverageTemp()) + "°c");
             Humidity.setText(String.valueOf(myhouse.getAverageHumidity()) + "%");
             PowerToday.setText(String.valueOf((int) myhouse.getPowerCurrent()) + "W");
