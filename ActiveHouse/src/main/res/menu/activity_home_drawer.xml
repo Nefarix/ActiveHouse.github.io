@@ -17,6 +17,21 @@
              android:title="@string/settings"
              app:showAsAction="never" />
         <item
+
+            android:id="@+id/action_settings"
+            android:icon="@drawable/ic_settings_black_48dp"
+            android:title="@string/settings"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/nav_aboutUs"
+            android:title="@string/aboutUs"/>
+       <!-- <item
+            android:id="@+id/nav_stats"
+            android:icon="@drawable/ic_history_black_48dp"
+            android:title="@string/statistics" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_48dp"
              android:id="@+id/nav_stats"
              android:icon="@drawable/ic_history_black_48dp"
              android:title="@string/statistics" /> -->
@@ -24,8 +39,9 @@
              android:id="@+id/nav_settings"
              android:icon="@drawable/ic_settings_black_48dp"
              android:title="@string/settings" />
-    </group>
+             android:title="@string/settings" />
 
+    </group>
     <item android:title="@string/rooms"
         android:visible="true">
         <menu>

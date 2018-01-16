@@ -47,6 +47,64 @@
         android:text="@string/ryan"
         android:textColor="@color/colorBG" />
 
+    <TextView
+        android:id="@+id/developerParagraph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Oliver"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="137dp"
+        android:text="@string/developerParagraph"
+        android:textColor="@color/colorBG" />
+
+    <TextView
+        android:id="@+id/ryanMunro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/Ryan"
+        android:layout_marginTop="47dp"
+        android:textColor="@color/colorBG" />
+
+    <TextView
+        android:id="@+id/patrickMunro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ryanMunro"
+        android:layout_alignBottom="@+id/ryanMunro"
+        android:layout_alignEnd="@+id/aboutUs"
+        android:textColor="@color/colorBG" />
+
+    <TextView
+        android:id="@+id/oliverMunro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/patrickMunro"
+        android:layout_alignBottom="@+id/patrickMunro"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/colorBG" />
+
+    <TextView
+        android:id="@+id/groupTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/developerParagraph"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="@string/groupTitle"
+        android:textColor="@color/colorBG"
+        android:textSize="24sp"/>
+
+    <ImageView
+        android:id="@+id/projectI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/groupTitle"
+        android:layout_marginStart="10dp"
+        app:srcCompat="@drawable/house" />
+
+
 </RelativeLayout>
 
 

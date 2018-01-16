@@ -178,6 +178,13 @@ public class HomeActivity extends AppCompatActivity
             finish();
             return true;
         }
+        else if (id == R.id.action_aboutus) {
+            Intent intent = new Intent(HomeActivity.this, AboutUs.class);
+            startActivity(intent);
+            finish();
+            return true;
+        }
+        
         return super.onOptionsItemSelected(item);
     }
 
@@ -196,14 +203,24 @@ public class HomeActivity extends AppCompatActivity
             startActivity(intent);
             //} else if (id == R.id.nav_stats) {
 
+
         } else if (id == R.id.nav_settings){
                 Intent intent = new Intent(HomeActivity.this, SettingsActivity.class);
                 startActivity(intent);
                 return true;
-        }
-        else{
+        }  else if (id == R.id.nav_aboutUs) {
+            Intent intent = new Intent(HomeActivity.this, AboutUs.class);
+            startActivity(intent);
+        }  else {
             startActivity(item.getIntent());
         }
+        //} else if (id == R.id.nav_stats) {
+
+        //} else if (id == R.id.nav_settings) {
+
+ 
+      
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

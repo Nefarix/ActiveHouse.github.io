@@ -18,4 +18,9 @@
         android:orderInCategory="100"
         android:title="@string/logout"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_aboutus"
+        android:orderInCategory="100"
+        android:title="@string/aboutUs"
+        app:showAsAction="never"/>
 </menu>
