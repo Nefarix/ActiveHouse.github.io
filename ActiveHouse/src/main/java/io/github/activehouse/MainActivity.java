@@ -60,17 +60,13 @@ public class MainActivity extends AppCompatActivity {
             etUsername.setText(savedUsername);
             cbSave.setChecked(true);
         }
-
-
         btnLogin = (Button)findViewById(R.id.btn_login);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
-
 
         });
 
@@ -118,7 +114,6 @@ public class MainActivity extends AppCompatActivity {
         tvRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
                 startActivity(intent);
 

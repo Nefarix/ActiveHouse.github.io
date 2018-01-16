@@ -17,8 +17,8 @@
 
     <ListPreference
         android:defaultValue="1"
-        android:entries="@android:array/emailAddressTypes"
-        android:entryValues="@android:array/imProtocols"
+        android:entries="@array/Colour"
+        android:entryValues="@array/Colour"
         android:key="list_preference_1"
         android:title="@string/theme" />
 
@@ -27,8 +27,6 @@
         android:key="switch_preference_1"
         android:summary="Fill"
         android:title="Fill" />
-
-
 
     <ListPreference
         android:defaultValue="1"

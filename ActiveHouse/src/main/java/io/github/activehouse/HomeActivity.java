@@ -49,7 +49,7 @@ public class HomeActivity extends AppCompatActivity
 
         getIntent().setAction("Already created");
 
-        PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
+        PreferenceManager.setDefaultValues(HomeActivity.this, R.xml.preferences, false);
 
         LinearLayout LightsOn = (LinearLayout) findViewById(R.id.linearLayoutOn);
         LightsOn.setOnClickListener(new View.OnClickListener() {
@@ -107,12 +107,6 @@ public class HomeActivity extends AppCompatActivity
         Intent intent = new Intent(this, GasService.class);
         intent.putExtra("HouseID", MainActivity.HouseID);
         startService(intent);
-
-
-
-
-
-
     }
 
     @Override
@@ -183,20 +177,14 @@ public class HomeActivity extends AppCompatActivity
             startActivity(intent);
             finish();
             return true;
-        } else if (id == R.id.action_settings){
-            Intent intent = new Intent(HomeActivity.this, SettingsActivity.class);
-            startActivity(intent);
-            //finish();
-            return true;
         }
-
         else if (id == R.id.action_aboutus) {
             Intent intent = new Intent(HomeActivity.this, AboutUs.class);
             startActivity(intent);
             finish();
             return true;
         }
-
+        
         return super.onOptionsItemSelected(item);
     }
 
@@ -213,23 +201,26 @@ public class HomeActivity extends AppCompatActivity
             //intent.putExtra("SomeStringData", "");
 
             startActivity(intent);
+            //} else if (id == R.id.nav_stats) {
 
-        //} else if (id == R.id.nav_stats) {
 
-<<<<<<< HEAD
-        //} else if (id == R.id.nav_settings) {
-
-        }
-        else if (id == R.id.nav_aboutUs) {
+        } else if (id == R.id.nav_settings){
+                Intent intent = new Intent(HomeActivity.this, SettingsActivity.class);
+                startActivity(intent);
+                return true;
+        }  else if (id == R.id.nav_aboutUs) {
             Intent intent = new Intent(HomeActivity.this, AboutUs.class);
             startActivity(intent);
-        }
-        else {
-=======
-        } else {
->>>>>>> 7184308bbae8adbb340e61de5840678a1a39d4ac
+        }  else {
             startActivity(item.getIntent());
         }
+        //} else if (id == R.id.nav_stats) {
+
+        //} else if (id == R.id.nav_settings) {
+
+ 
+      
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
