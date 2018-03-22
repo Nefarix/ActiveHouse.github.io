@@ -1,13 +1,11 @@
-//AH Studios
-//ActiveHouseV2 Project
+//Active Applications
+//Active House Project
 
 package io.github.activehouse;
 
-
 /**
- * Revised by Oliver on 2017-11-12
+ * Created by Trenton on 2016-11-15.
  */
-
 
 import android.util.Log;
 
