@@ -20,6 +20,7 @@ import org.json.JSONObject;
 import java.util.Timer;
 import java.util.TimerTask;
 
+
 public class TempService{} /*extends Service {
 
    public TempService(){
@@ -163,6 +164,8 @@ public class TempService{} /*extends Service {
             return null;
         }
     }
+
+
 
     protected void onPostExecute(Void result)
     {

@@ -4,8 +4,10 @@ package io.github.activehouse;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Process;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -35,7 +37,6 @@ public class HomeActivity extends AppCompatActivity
     private String TAG = MainActivity.class.getSimpleName();
     NavigationView navigationView;
 
-
     public static House myhouse;
 
 
@@ -43,11 +44,13 @@ public class HomeActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        //setTheme(android.R.style.Theme_NoTitleBar);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         getIntent().setAction("Already created");
 
+        PreferenceManager.setDefaultValues(HomeActivity.this, R.xml.preferences, false);
 
         LinearLayout LightsOn = (LinearLayout) findViewById(R.id.linearLayoutOn);
         LightsOn.setOnClickListener(new View.OnClickListener() {
@@ -105,12 +108,6 @@ public class HomeActivity extends AppCompatActivity
         Intent intent = new Intent(this, GasService.class);
         intent.putExtra("HouseID", MainActivity.HouseID);
         startService(intent);
-
-
-
-
-
-
     }
 
     @Override
@@ -181,13 +178,14 @@ public class HomeActivity extends AppCompatActivity
             startActivity(intent);
             finish();
             return true;
-        } else if (id == R.id.action_settings){
-            Intent intent = new Intent(HomeActivity.this, SettingsActivity.class);
+        }
+        else if (id == R.id.action_aboutus) {
+            Intent intent = new Intent(HomeActivity.this, AboutUs.class);
             startActivity(intent);
             finish();
             return true;
         }
-
+        
         return super.onOptionsItemSelected(item);
     }
 
@@ -204,14 +202,26 @@ public class HomeActivity extends AppCompatActivity
             //intent.putExtra("SomeStringData", "");
 
             startActivity(intent);
+            //} else if (id == R.id.nav_stats) {
 
+
+        } else if (id == R.id.nav_settings){
+                Intent intent = new Intent(HomeActivity.this, SettingsActivity.class);
+                startActivity(intent);
+                return true;
+        }  else if (id == R.id.nav_aboutUs) {
+            Intent intent = new Intent(HomeActivity.this, AboutUs.class);
+            startActivity(intent);
+        }  else {
+            startActivity(item.getIntent());
+        }
         //} else if (id == R.id.nav_stats) {
 
         //} else if (id == R.id.nav_settings) {
 
-        } else {
-            startActivity(item.getIntent());
-        }
+ 
+      
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -331,7 +341,9 @@ public class HomeActivity extends AppCompatActivity
             TextView WaterToday = (TextView) findViewById(R.id.textViewWaterToday);
             TextView WaterAverage = (TextView) findViewById(R.id.textViewWaterAverage);
             TextView Lights = (TextView) findViewById(R.id.textViewLights);
-
+            /*
+            Make a if/else with true/false for converting.
+             */
             Temp.setText(String.valueOf(myhouse.getAverageTemp()) + "°c");
             Humidity.setText(String.valueOf(myhouse.getAverageHumidity()) + "%");
             PowerToday.setText(String.valueOf((int) myhouse.getPowerCurrent()) + "W");

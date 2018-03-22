@@ -8,7 +8,7 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
+    <string name="server_address_get_rooms">x</string>
     <string name="action_settings">Settings</string>
     <string name="rooms">Rooms</string>
     <string name="settings">Settings</string>
@@ -77,7 +77,6 @@
     <string name="lastYear">Last Year</string>
     <string name="longerThanAYear">Longer Than A Year</string>
     <string name="yesterday">Yesterday</string>
-    <string name="aboutUs">About Us</string>
     <string name="oliver">Oliver Duarte</string>
     <string name="ryan">Ryan Antolin</string>
     <string name="patrick">Patrick Ng</string>
@@ -86,14 +85,17 @@
     <string name="convert1">Turn this on to convert to imperial measurement</string>
     <string name="theme">Change Theme Colour</string>
 
+    <string name="AboutUs">About Us</string>
     <string name="groupTitle">AHStudio</string>
     <string name="developerParagraph">Hello User! Welcome to ActiveHouse. An application that was created by AHStudio. You might be
         wondering who is AHStudio and who are they? We are 3rd year Computer Engineering Technology Students from Humber College
         that has designed an application to help solve the issue that is being able to control and monitor your house from the
         comfort of your smartphone.</string>
-    <!--<string name="appParagraph">ActiveHouse is an application that connect to a database where the sensors around your house sent-->
-        <!--information to it and will sync back to the application. Sensors that are used with this application are Temperature,-->
-        <!--Water, Power and Light. </string>-->
+    <string name="oliverLink">Click for Oliver Website</string>
+    <string name="patrickLink">Click for Patrick Website</string>
+    <string name="ryanLink">Click for Ryan Website</string>
+    <string name="themeSummary">Set theme preference</string>
+
 
 
 
