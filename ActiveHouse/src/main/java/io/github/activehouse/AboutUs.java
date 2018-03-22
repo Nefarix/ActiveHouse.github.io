@@ -33,6 +33,5 @@ public class AboutUs extends AppCompatActivity {
         patrickMunro.setText(Html.fromHtml(link2));
 
 
-
     }
 }
